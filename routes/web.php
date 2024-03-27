@@ -90,4 +90,3 @@ Route::prefix('admin')->name('admin.')->middleware(['auth','check_permissions'])
     Route::get('about',[AdminSettingController::class, 'edit'])->name('setting.edit');
     Route::post('about',[AdminSettingController::class, 'update'])->name('setting.update');
 });
-
